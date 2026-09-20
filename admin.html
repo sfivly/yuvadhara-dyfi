@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>അഡ്മിൻ - റിപ്പോർട്ട് ജനറേറ്റർ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>അഡ്മിൻ പാനൽ</h1>
+      <h2>യുവധാര ദൈനംദിന റിപ്പോർട്ട്</h2>
+    </header>
+
+    <form id="loginForm" class="card">
+      <div class="field">
+        <label for="password">പാസ്‌വേഡ്</label>
+        <input type="password" id="password" required>
+      </div>
+      <button type="submit">ലോഗിൻ</button>
+      <div id="loginStatus" class="status"></div>
+    </form>
+
+    <div id="reportSection" class="card hidden">
+      <div class="field">
+        <label for="reportDate">റിപ്പോർട്ട് വേണ്ട തിയ്യതി</label>
+        <input type="date" id="reportDate" required>
+      </div>
+      <button type="button" id="generateBtn">PDF റിപ്പോർട്ട് ജനറേറ്റ് ചെയ്യുക</button>
+      <div id="reportStatus" class="status"></div>
+    </div>
+
+    <div class="admin-link"><a href="index.html">← എൻട്രി പേജിലേക്ക്</a></div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

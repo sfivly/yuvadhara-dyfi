@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>യുവധാര - ദൈനംദിന റിപ്പോർട്ട് എൻട്രി</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>യുവധാര 2026 - 27</h1>
+      <h2>DYFI വളാഞ്ചേരി ബ്ലോക്ക് കമ്മിറ്റി</h2>
+    </header>
+
+    <form id="entryForm" class="card">
+      <div class="field">
+        <label>തിയ്യതി</label>
+        <div id="todayDate" class="readonly-field">--</div>
+      </div>
+
+      <div class="field">
+        <label for="committee">മേഖലാ കമ്മിറ്റി</label>
+        <select id="committee" required>
+          <option value="" disabled selected>തിരഞ്ഞെടുക്കുക</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="todayAdded">ഇന്ന് മാത്രം ചേർത്ത ആകെ യുവധാര</label>
+        <input type="number" id="todayAdded" min="0" inputmode="numeric" required>
+      </div>
+
+      <div class="field">
+        <label for="moneyReceived">ആകെ പണം ലഭിച്ചത് (മുൻ ദിവസങ്ങളിലേത് അടക്കം)</label>
+        <input type="number" id="moneyReceived" min="0" inputmode="numeric" required>
+      </div>
+
+      <button type="submit" id="submitBtn">സമർപ്പിക്കുക</button>
+      <div id="statusMsg" class="status"></div>
+    </form>
+
+    <div class="admin-link"><a href="admin.html">അഡ്മിൻ ലോഗിൻ</a></div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

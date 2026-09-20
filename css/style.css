@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Anek Malayalam';
+  src: url('../fonts/AnekMalayalam-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Anek Malayalam', sans-serif;
+  background: #f2f4f7;
+  margin: 0;
+  padding: 16px;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+header { text-align: center; margin-bottom: 20px; }
+header h1 { font-size: 1.4rem; margin: 0 0 4px; color: #b3121a; }
+header h2 { font-size: 1.05rem; margin: 0; font-weight: 500; color: #333; }
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 16px;
+}
+
+.field { margin-bottom: 16px; }
+
+label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+select, input[type="number"], input[type="password"], input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.readonly-field {
+  padding: 12px;
+  background: #eef1f5;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.05rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: #b3121a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:disabled { background: #999; }
+
+.status {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+  min-height: 1.2em;
+}
+
+.status.success { color: #1a7a2e; }
+.status.error { color: #b3121a; }
+
+.admin-link { text-align: center; margin-top: 8px; }
+.admin-link a { color: #555; text-decoration: none; font-size: 0.9rem; }
+
+.hidden { display: none; }
+
+@media (min-width: 600px) {
+  .container { max-width: 600px; }
+  .card { padding: 28px; }
+}
